@@ -19,11 +19,12 @@ class ExploreViewController: UIViewController {
     }
 }
 
+
 // MARK: - Setup
 extension ExploreViewController {
     
     private func initialSetup() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemGroupedBackground
         viewModel.delegate = self
         
         setupNavigationBar()
@@ -52,8 +53,14 @@ extension ExploreViewController {
     }
 }
 
+
 // MARK: - ViewModel Events Delegate
 extension ExploreViewController: ExploreViewModelEventsDelegate {
+    
+    func didSelectFlight(flight: Flight) {
+        let vc = WeekendViewController(flight: flight)
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
     func flightsDidLoad() {
         tableView.reloadData()

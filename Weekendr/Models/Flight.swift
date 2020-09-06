@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - Weekend
 struct Flight: Codable {
-    let arrivalDay: Int
+    /*let arrivalDay: Int
     let arrivalWhen: Int
     let returnDay: Int
     let returnWhen: Int
@@ -20,15 +20,14 @@ struct Flight: Codable {
     let destiName: String
     let labels: [String]
     let dPhoto: String
-    let dDescription: String
+    let dDescription: String?
     let country: String
     let bookingCountry: String
     let destiId: Int
     let wePrice: Int
     let fPrice: Int
-    let eventName: String
-    let tagline: String
-    let eDescription: String
+    let tagline: String?
+    let eDescription: String?
     let ePhoto: String?
     let eAltPhoto: String
     let dImage: String
@@ -48,7 +47,44 @@ struct Flight: Codable {
     let noteWeekend: Double
     let noteFlight: Double
     let noteSexy: Double
+    let noteHotel: Double*/
+    
+    let arrivalDay: Int
+    let arrivalWhen: Int
+    let returnDay: Int
+    let returnWhen: Int
+    let weDate: String
+    let days: Int
+    let nights: Int
+    let destiName: String
+    let labels: [String]
+    let dPhoto: String
+    let dDescription: String?
+    let country: String
+    let bookingCountry: String
+    let destiId: Int
+    let wePrice: Int
+    let fPrice: Int
+    let tagline: String?
+    let dImage: String
+    let idFrom: Int
+    let idMetier: String
+    let meteo: Int
+    let soon: Bool
+    let weDateFront: String
+    let goInfoDeskt: String
+    let returnInfoDeskt: String
+    let goInfoMobile: String
+    let returnInfoMobile: String
+    let from: String
+    let noteWeekend: Double
+    let noteFlight: Double
+    let noteSexy: Double
     let noteHotel: Double
+    let distanceCenter: String
+    let timeToDestination: String
+    let weekendrScore: Double
+    
     let vehicle: TransportType
 }
 

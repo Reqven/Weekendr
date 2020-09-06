@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol FlightListCellViewModelEventsDelegate: class {
+    func didSelectFlight(flight: Flight)
+}
+
 class FlightListCellViewModel: NSObject {
     
     // MARK: - Properties
+    weak var delegate: FlightListCellViewModelEventsDelegate?
     var flights: [Flight]
     
     init(flights: [Flight]) {
@@ -46,6 +51,9 @@ extension FlightListCellViewModel: UICollectionViewDataSource {
 // MARK: - UICollectionView Delegate
 extension FlightListCellViewModel: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectFlight(flight: flight(for: indexPath))
+    }
 }
 
 // MARK: - UICollectionView DelegateFlowLayout

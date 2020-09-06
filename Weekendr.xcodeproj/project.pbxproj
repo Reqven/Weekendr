@@ -29,7 +29,19 @@
 		BB3D53E624789F0C00BA5D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3D53E424789F0C00BA5D9E /* LaunchScreen.storyboard */; };
 		BB3D53F42478C41200BA5D9E /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D53F32478C41200BA5D9E /* Flight.swift */; };
 		BB3D53F82478CE6F00BA5D9E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D53F72478CE6F00BA5D9E /* NetworkManager.swift */; };
+		BB3E078125026BE900919D5A /* WeekendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E078025026BE900919D5A /* WeekendViewController.swift */; };
+		BB3E078325026C1600919D5A /* WeekendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E078225026C1600919D5A /* WeekendViewModel.swift */; };
+		BB3E07862503CCFF00919D5A /* WeekendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E07852503CCFF00919D5A /* WeekendCell.swift */; };
+		BB3E07882503CD1300919D5A /* WeekendCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E07872503CD1300919D5A /* WeekendCellViewModel.swift */; };
+		BB3E078A2503D15200919D5A /* WeekendItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E07892503D15200919D5A /* WeekendItemViewModel.swift */; };
+		BB3E078D2503F5DB00919D5A /* WeekendFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E078C2503F5DB00919D5A /* WeekendFlightCell.swift */; };
+		BB3E078F2503F5EC00919D5A /* WeekendFlightCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E078E2503F5EC00919D5A /* WeekendFlightCellViewModel.swift */; };
+		BB3E07922504292300919D5A /* FlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E07912504292300919D5A /* FlightView.swift */; };
+		BB3E079525044BD900919D5A /* WeekendHotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E079425044BD900919D5A /* WeekendHotelCell.swift */; };
+		BB3E079725044BE600919D5A /* WeekendHotelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E079625044BE600919D5A /* WeekendHotelCellViewModel.swift */; };
+		BB3E079A250482F900919D5A /* MultipleLabelsRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E0799250482F900919D5A /* MultipleLabelsRoundedButton.swift */; };
 		BB5303622485C03D00CC6775 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5303612485C03D00CC6775 /* Helper.swift */; };
+		BBA0D2E625054B8D0010E641 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA0D2E525054B8D0010E641 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +69,19 @@
 		BB3D53E724789F0C00BA5D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB3D53F32478C41200BA5D9E /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		BB3D53F72478CE6F00BA5D9E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BB3E078025026BE900919D5A /* WeekendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendViewController.swift; sourceTree = "<group>"; };
+		BB3E078225026C1600919D5A /* WeekendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendViewModel.swift; sourceTree = "<group>"; };
+		BB3E07852503CCFF00919D5A /* WeekendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendCell.swift; sourceTree = "<group>"; };
+		BB3E07872503CD1300919D5A /* WeekendCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendCellViewModel.swift; sourceTree = "<group>"; };
+		BB3E07892503D15200919D5A /* WeekendItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendItemViewModel.swift; sourceTree = "<group>"; };
+		BB3E078C2503F5DB00919D5A /* WeekendFlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendFlightCell.swift; sourceTree = "<group>"; };
+		BB3E078E2503F5EC00919D5A /* WeekendFlightCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendFlightCellViewModel.swift; sourceTree = "<group>"; };
+		BB3E07912504292300919D5A /* FlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightView.swift; sourceTree = "<group>"; };
+		BB3E079425044BD900919D5A /* WeekendHotelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendHotelCell.swift; sourceTree = "<group>"; };
+		BB3E079625044BE600919D5A /* WeekendHotelCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendHotelCellViewModel.swift; sourceTree = "<group>"; };
+		BB3E0799250482F900919D5A /* MultipleLabelsRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleLabelsRoundedButton.swift; sourceTree = "<group>"; };
 		BB5303612485C03D00CC6775 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		BBA0D2E525054B8D0010E641 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +98,7 @@
 		BB3398A8248518EB0024A1AE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BB3E077F25026B3100919D5A /* Weekend */,
 				BB3398AF24851A4C0024A1AE /* Explore */,
 			);
 			path = Screens;
@@ -95,6 +120,7 @@
 				BB33982F2480064E0024A1AE /* UIStackView+Ext.swift */,
 				BB2B6EC724858473004CB985 /* UITableViewCell+Ext.swift */,
 				BB2B6EC92485848D004CB985 /* UICollectionViewCell+Ext.swift */,
+				BBA0D2E525054B8D0010E641 /* UIColor+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -102,6 +128,8 @@
 		BB3398AC248519480024A1AE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB3E0798250482A400919D5A /* Buttons */,
+				BB3E07902504290200919D5A /* Custom */,
 				BB3398B424851A8C0024A1AE /* Cells */,
 			);
 			path = Views;
@@ -120,6 +148,9 @@
 		BB3398B424851A8C0024A1AE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BB3E079325044BC000919D5A /* WeekendHotelCell */,
+				BB3E078B2503F5BE00919D5A /* WeekendFlightCell */,
+				BB3E07842503CCD900919D5A /* WeekendCell */,
 				BB3398B524851A940024A1AE /* FlightCell */,
 				BB3398B624851AA20024A1AE /* FlightListCell */,
 				BB3398B724851AB30024A1AE /* FlightCardCell */,
@@ -187,6 +218,59 @@
 				BB3D53DF24789F0900BA5D9E /* Weekendr.xcdatamodeld */,
 			);
 			path = Weekendr;
+			sourceTree = "<group>";
+		};
+		BB3E077F25026B3100919D5A /* Weekend */ = {
+			isa = PBXGroup;
+			children = (
+				BB3E078025026BE900919D5A /* WeekendViewController.swift */,
+				BB3E078225026C1600919D5A /* WeekendViewModel.swift */,
+				BB3E07892503D15200919D5A /* WeekendItemViewModel.swift */,
+			);
+			path = Weekend;
+			sourceTree = "<group>";
+		};
+		BB3E07842503CCD900919D5A /* WeekendCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB3E07852503CCFF00919D5A /* WeekendCell.swift */,
+				BB3E07872503CD1300919D5A /* WeekendCellViewModel.swift */,
+			);
+			path = WeekendCell;
+			sourceTree = "<group>";
+		};
+		BB3E078B2503F5BE00919D5A /* WeekendFlightCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB3E078C2503F5DB00919D5A /* WeekendFlightCell.swift */,
+				BB3E078E2503F5EC00919D5A /* WeekendFlightCellViewModel.swift */,
+			);
+			path = WeekendFlightCell;
+			sourceTree = "<group>";
+		};
+		BB3E07902504290200919D5A /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BB3E07912504292300919D5A /* FlightView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BB3E079325044BC000919D5A /* WeekendHotelCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB3E079425044BD900919D5A /* WeekendHotelCell.swift */,
+				BB3E079625044BE600919D5A /* WeekendHotelCellViewModel.swift */,
+			);
+			path = WeekendHotelCell;
+			sourceTree = "<group>";
+		};
+		BB3E0798250482A400919D5A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BB3E0799250482F900919D5A /* MultipleLabelsRoundedButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		BB9FFFE82485B5E0008CB4DE /* Managers */ = {
@@ -279,21 +363,33 @@
 				BB3398302480064E0024A1AE /* UIStackView+Ext.swift in Sources */,
 				BB2B6EC824858473004CB985 /* UITableViewCell+Ext.swift in Sources */,
 				BB3398BA24851AD20024A1AE /* FlightCellViewModel.swift in Sources */,
+				BB3E07882503CD1300919D5A /* WeekendCellViewModel.swift in Sources */,
 				BB3398BB24851AD20024A1AE /* FlightCell.swift in Sources */,
+				BB3E07922504292300919D5A /* FlightView.swift in Sources */,
 				BB3D53F82478CE6F00BA5D9E /* NetworkManager.swift in Sources */,
+				BB3E078D2503F5DB00919D5A /* WeekendFlightCell.swift in Sources */,
 				BB3D53D724789F0900BA5D9E /* AppDelegate.swift in Sources */,
 				BB3D53E124789F0900BA5D9E /* Weekendr.xcdatamodeld in Sources */,
+				BB3E079525044BD900919D5A /* WeekendHotelCell.swift in Sources */,
 				BB3398B224851A630024A1AE /* ExploreViewModel.swift in Sources */,
+				BB3E078A2503D15200919D5A /* WeekendItemViewModel.swift in Sources */,
 				BB3398AE24851A280024A1AE /* ExploreViewController.swift in Sources */,
 				BB33982E248003810024A1AE /* UIView+Ext.swift in Sources */,
+				BBA0D2E625054B8D0010E641 /* UIColor+Ext.swift in Sources */,
+				BB3E079A250482F900919D5A /* MultipleLabelsRoundedButton.swift in Sources */,
+				BB3E079725044BE600919D5A /* WeekendHotelCellViewModel.swift in Sources */,
 				BB3398BF24851AD90024A1AE /* FlightListCellViewModel.swift in Sources */,
 				BB5303622485C03D00CC6775 /* Helper.swift in Sources */,
 				BB3D53F42478C41200BA5D9E /* Flight.swift in Sources */,
 				BB3398BE24851AD90024A1AE /* FlightListCell.swift in Sources */,
+				BB3E078325026C1600919D5A /* WeekendViewModel.swift in Sources */,
+				BB3E07862503CCFF00919D5A /* WeekendCell.swift in Sources */,
 				BB3D53D924789F0900BA5D9E /* SceneDelegate.swift in Sources */,
 				BB3398C324851ADE0024A1AE /* FlightCardCellViewModel.swift in Sources */,
+				BB3E078125026BE900919D5A /* WeekendViewController.swift in Sources */,
 				BB3398C224851ADE0024A1AE /* FlightCardCell.swift in Sources */,
 				BB2B6ECA2485848D004CB985 /* UICollectionViewCell+Ext.swift in Sources */,
+				BB3E078F2503F5EC00919D5A /* WeekendFlightCellViewModel.swift in Sources */,
 				BB3398B324851A630024A1AE /* ExploreItemViewModel.swift in Sources */,
 				BB2B6ECC2485B085004CB985 /* Weekend.swift in Sources */,
 				BB2B6EC62485271A004CB985 /* Describable.swift in Sources */,

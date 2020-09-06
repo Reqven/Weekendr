@@ -9,6 +9,7 @@
 import UIKit
 
 protocol ExploreViewModelEventsDelegate: class {
+    func didSelectFlight(flight: Flight)
     func flightsDidLoad()
     func loadingDidFail()
 }
@@ -35,7 +36,8 @@ class ExploreViewModel: NSObject {
                 DispatchQueue.main.async {
                     self.delegate?.flightsDidLoad()
                 }
-            case .failure(_):
+            case .failure(let error):
+                print(error)
                 DispatchQueue.main.async {
                     self.delegate?.loadingDidFail()
                 }
@@ -43,6 +45,7 @@ class ExploreViewModel: NSObject {
         })
     }
 }
+
 
 // MARK: - UITableView DataSource
 extension ExploreViewModel: UITableViewDataSource {
@@ -74,6 +77,7 @@ extension ExploreViewModel: UITableViewDataSource {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: FlightListCell.typeName, for: indexPath) as? FlightListCell,
                    let item = item as? ExploreFlightListItemViewModel {
                         let viewModel = FlightListCellViewModel(flights: item.flights)
+                        viewModel.delegate = self
                         cell.setup(with: viewModel)
                         return cell
                 }
@@ -83,3 +87,10 @@ extension ExploreViewModel: UITableViewDataSource {
 }
 
 
+// MARK: - ViewModel Events Delegate
+extension ExploreViewModel: FlightListCellViewModelEventsDelegate {
+    
+    func didSelectFlight(flight: Flight) {
+        delegate?.didSelectFlight(flight: flight)
+    }
+}

@@ -63,7 +63,63 @@ extension NetworkManager {
                 
                 let search = try decoder.decode(FlightSearch.self, from: data)
                 completed(.success(search.flights))
-            } catch {
+            } catch let e {
+                print(e)
+                completed(.failure(NSError(domain: "Error Decoding", code: 0)))
+            }
+        }
+        task.resume()
+    }
+    
+    
+    func getWeekend(flight: Flight, completed: @escaping (Result<Weekend, Error>) -> Void) {
+        
+        let queryItems = [
+            URLQueryItem(name: "id_metier", value: flight.idMetier),
+            // URLQueryItem(name: "city_from", value: flight.from),
+            URLQueryItem(name: "city_to", value: flight.destiName),
+            // URLQueryItem(name: "passengers", value: "2"),
+            URLQueryItem(name: "formula", value: "11"),
+        ]
+        let endpoint = "\(baseUrl)show"
+        var urlComponents = URLComponents(string: endpoint)!
+        urlComponents.queryItems = queryItems
+        
+        print("Expected")
+        print("https://www.weekendr.eu/api/v1/show?id_metier=202045341010000400000010001250.0&city_from=Paris-tous&city_to=Lisbonne&mobile=1&passengers=2&formula=11&weekendr_score=5.96873624264701&need_update=1")
+        
+        print("Dev")
+        print(urlComponents.url!)
+
+        
+        guard let url = urlComponents.url else {
+            completed(.failure(NSError(domain: "Bad URL", code: 0)))
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let _ = error {
+                completed(.failure(NSError(domain: "Task Error", code: 0)))
+                return
+            }
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                completed(.failure(NSError(domain: "Bad Response", code: 0)))
+                return
+            }
+            
+            guard let data = data else {
+                completed(.failure(NSError(domain: "Bad Data", code: 0)))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                
+                let weekend = try decoder.decode(Weekend.self, from: data)
+                completed(.success(weekend))
+            } catch let e {
+                print(e)
                 completed(.failure(NSError(domain: "Error Decoding", code: 0)))
             }
         }
